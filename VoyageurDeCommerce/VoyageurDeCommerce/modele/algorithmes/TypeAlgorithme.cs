@@ -4,6 +4,10 @@
     public enum TypeAlgorithme
     {
         ALGOEXEMPLE,
-        CROISSANT
+        CROISSANT,
+        PLUSPROCHEVOISIN,
+        INSERTIONPROCHE,
+        INSERTIONLOIN,
+        VOISINAGETOURNEE
     }
 }
