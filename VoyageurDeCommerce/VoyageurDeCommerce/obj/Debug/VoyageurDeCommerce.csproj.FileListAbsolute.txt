@@ -1,0 +1,118 @@
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\App.g.cs
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csprojAssemblyReference.cache
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\Test1.gph
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\Test2.gph
+C:\Users\Matthieu\source\repos\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csprojAssemblyReference.cache
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\App.g.cs
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.g.cs
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.baml
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple1.gph
+C:\Users\simonetma\Desktop\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple2.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple1.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple2.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csprojAssemblyReference.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\App.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante- Copie\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple1.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple2.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csprojAssemblyReference.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\App.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante - correction partie 3\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple1.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple2.gph
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csprojAssemblyReference.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\App.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+C:\Users\simonetma\Desktop\Rangement\Développement\SAE 2.02\VoyageurDeCommerce - Version Etudiante\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple1.gph
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\ressources\GrapheSimple2.gph
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe.config
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.exe
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\bin\Debug\VoyageurDeCommerce.pdb
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.AssemblyReference.cache
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.g.cs
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.g.cs
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\App.g.cs
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_Content.g.cs
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.cache
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce_MarkupCompile.lref
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\composants\PanelTournee.baml
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\vue\FenetrePrincipale.baml
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.g.resources
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.Properties.Resources.resources
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.GenerateResource.cache
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
