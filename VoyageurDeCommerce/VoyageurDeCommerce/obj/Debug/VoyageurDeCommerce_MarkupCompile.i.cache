@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\
+C:\Users\calib\OneDrive\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\
 VoyageurDeCommerce
 none
 false
 DEBUG;TRACE
-\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\al240099\documents\Semestre 2\S2_02 - Exploration algorithmique d'un problème\VoyageurDeCommerce\VoyageurDeCommerce\App.xaml
+C:\Users\calib\OneDrive\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\App.xaml
 2763551359
 21152305788
-33-980865606
+36-361394760
 13-1505183044
 vue\composants\PanelTournee.xaml;vue\FenetrePrincipale.xaml;
 
-True
+False
 

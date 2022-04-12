@@ -9,7 +9,7 @@ using VoyageurDeCommerce.modele.lieux;
 
 namespace VoyageurDeCommerce.modele.algorithmes.realisations
 {
-    class AlgorithmeCroissant : Algorithme
+    public class AlgorithmeCroissant : Algorithme
     {
         public override string Nom => "Tournée croissante"; 
 
