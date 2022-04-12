@@ -56,8 +56,6 @@ namespace VoyageurDeCommerce.modele.parseur
                 }
             }
 
-
-
             /*
             //graphe à la main du tp03
             this.listeLieux.Add("1", new Lieu(TypeLieu.USINE, "USINE", 0, 0));
