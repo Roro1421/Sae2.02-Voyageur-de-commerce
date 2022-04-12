@@ -79,6 +79,7 @@
     <Compile Include="modele\algorithmes\realisations\AlgorithmePlusProcheVoisin.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeCroissant.cs" />
     <Compile Include="modele\distances\FloydWarshall.cs" />
+    <Compile Include="ressources\Graphe.cs" />
     <Compile Include="vuemodele\VueModeleHistorique.cs" />
     <Compile Include="vue\composants\AnimationColoration.cs" />
     <Compile Include="vue\composants\DisplaySettings.cs" />
