@@ -9,9 +9,9 @@ using VoyageurDeCommerce.modele.lieux;
 
 namespace VoyageurDeCommerce.modele.algorithmes.realisations
 {
-    public class AlgorithmeLePlusProcheVoisin : Algorithme
+    public class AlgorithmeInsertionLoin : Algorithme
     {
-        public override string Nom => "Le plus proche voisin"; 
+        public override string Nom => "Insertion loin"; 
 
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {

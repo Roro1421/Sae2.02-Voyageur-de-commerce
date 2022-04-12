@@ -73,6 +73,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeInsertionLoin.cs" />
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeVoisinageTournee.cs" />
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeInsertionProche.cs" />
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeLePlusProcheVoisin.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeCroissant.cs" />
     <Compile Include="modele\distances\FloydWarshall.cs" />
     <Compile Include="vuemodele\VueModeleHistorique.cs" />
