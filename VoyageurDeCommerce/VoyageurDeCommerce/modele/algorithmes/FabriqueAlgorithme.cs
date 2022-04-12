@@ -20,8 +20,11 @@ namespace VoyageurDeCommerce.modele.algorithmes
             switch (type)
             {
                 case TypeAlgorithme.ALGOEXEMPLE: algo = new AlgoExemple(); break;
-
                 case TypeAlgorithme.CROISSANT: algo = new AlgorithmeCroissant(); break;
+                case TypeAlgorithme.INSERTIONLOIN: algo = new AlgorithmeInsertionLoin(); break;
+                case TypeAlgorithme.INSERTIONPROCHE: algo = new AlgorithmeInsertionProche(); break;
+                case TypeAlgorithme.PLUSPROCHEVOISIN: algo = new AlgorithmePlusProcheVoisin(); break;
+                case TypeAlgorithme.VOISINAGETOURNEE: algo = new AlgorithmeVoisinageTournee(); break;
 
                 default: throw new ExceptionAlgorithme("Vous n'avez pas modifié la fabrique des algorithmes !");
             }

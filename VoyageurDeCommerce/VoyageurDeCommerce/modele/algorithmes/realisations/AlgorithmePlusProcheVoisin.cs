@@ -9,7 +9,7 @@ using VoyageurDeCommerce.modele.lieux;
 
 namespace VoyageurDeCommerce.modele.algorithmes.realisations
 {
-    public class AlgorithmeLePlusProcheVoisin : Algorithme
+    public class AlgorithmePlusProcheVoisin : Algorithme
     {
         public override string Nom => "Le plus proche voisin"; 
 
