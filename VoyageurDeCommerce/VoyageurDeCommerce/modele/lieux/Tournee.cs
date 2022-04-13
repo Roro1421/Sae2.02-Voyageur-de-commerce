@@ -36,6 +36,11 @@ namespace VoyageurDeCommerce.modele.lieux
             this.ListeLieux.Add(lieu);
         }
 
+        public void insert(int index, Lieu lieu)
+        {
+            this.ListeLieux.Insert(index,lieu);
+        }
+
         /// <summary>Distance totale de la tournée</summary>
         public int Distance
         {
