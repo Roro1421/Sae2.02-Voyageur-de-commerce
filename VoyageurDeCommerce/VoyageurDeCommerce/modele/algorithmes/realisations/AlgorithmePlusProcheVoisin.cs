@@ -23,55 +23,51 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {
-
+            //On lance la StopWatch
             Stopwatch sw = Stopwatch.StartNew();
 
             //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
-            //On initialise les listes
-            List<Lieu> lieuxVisites = new List<Lieu>();
+            //On initialise la liste des lieux non visités en copiant la liste de tout les lieux
             List<Lieu> lieuxNonVisites = new List<Lieu>(listeLieux);
 
-            Lieu usine = lieuxNonVisites[0];
+            //On initialise le lieu actuel au premier lieu non visité (l'usine)
+            Lieu lieuActuel = lieuxNonVisites[0];
 
-            //On commence la tournée avec l'usine
-            Tournee.Add(usine);
-            sw.Stop();
-            this.NotifyPropertyChanged("Tournee");
-            sw.Start();
-            
-
-            //On ajoute l'usine à la liste des lieux visités
-            lieuxVisites.Add(usine);
-
-            //On enlève l'usine de la lsite des lieux non visités
-            lieuxNonVisites.Remove(usine);
-
+            //Boucle tant qu'il reste des lieux à visiter
             while (lieuxNonVisites.Count > 0)
             {
-                Lieu voisinProche = lieuxNonVisites[0];
-                Lieu dernier = lieuxVisites[lieuxVisites.Count - 1];
+                //On initilise le voisin le plus proche à null
+                Lieu voisinProche = null;
+
+                //On initialise la distance entre le voisin connu le plus proche et le lieu actuel à 0
+                int distance = 0;
+
+                ///Boucle foreach qui parcours chaque lieu non visité 
                 foreach (Lieu l in lieuxNonVisites)
                 {
-                    if (FloydWarshall.Distance(dernier, l) < FloydWarshall.Distance(dernier, voisinProche))
+                    //voisinProche proche prend la valeur du lieu parcouru si sa distance avec la case actuelle est inférieur à celle du précédent voisin proche (ou si voisin proche est null)
+                    if (FloydWarshall.Distance(lieuActuel, l) < distance || voisinProche == null)
                     {
                         voisinProche = l;
+                        distance = FloydWarshall.Distance(lieuActuel, l);
                     }
                 }
 
                 //On ajoute le voisin le plus proche à la tournée
                 Tournee.Add(voisinProche);
 
+                //On arrête la StopWatch le temps de faire la capture de la tournée
                 sw.Stop();
                 this.NotifyPropertyChanged("Tournee");
                 sw.Start();
 
-                //On ajoute l'usine à la liste des lieux visités
-                lieuxVisites.Add(voisinProche);
-
-                //On enlève l'usine de la liste des lieux non visités
+                //On enlève le voisinProche de la liste des lieux non visités
                 lieuxNonVisites.Remove(voisinProche);
+
+                //Le lieu actuel est désormais le voisin le plus proche
+                lieuActuel = voisinProche;
             }
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
