@@ -29,34 +29,22 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
-            //On initialise les listes
-            List<Lieu> lieuxVisites = new List<Lieu>();
+            //On initialise la liste
             List<Lieu> lieuxNonVisites = new List<Lieu>(listeLieux);
 
-            Lieu usine = lieuxNonVisites[0];
-
-            //On commence la tournée avec l'usine
-            Tournee.Add(usine);
-            sw.Stop();
-            this.NotifyPropertyChanged("Tournee");
-            sw.Start();
-            
-
-            //On ajoute l'usine à la liste des lieux visités
-            lieuxVisites.Add(usine);
-
-            //On enlève l'usine de la lsite des lieux non visités
-            lieuxNonVisites.Remove(usine);
+            Lieu lieuActuel = lieuxNonVisites[0];
 
             while (lieuxNonVisites.Count > 0)
             {
-                Lieu voisinProche = lieuxNonVisites[0];
-                Lieu dernier = lieuxVisites[lieuxVisites.Count - 1];
+                Lieu voisinProche = null;
+                int distance = 0;
+
                 foreach (Lieu l in lieuxNonVisites)
                 {
-                    if (FloydWarshall.Distance(dernier, l) < FloydWarshall.Distance(dernier, voisinProche))
+                    if (FloydWarshall.Distance(lieuActuel, l) < distance || voisinProche == null)
                     {
                         voisinProche = l;
+                        distance = FloydWarshall.Distance(lieuActuel, l);
                     }
                 }
 
@@ -67,11 +55,10 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 this.NotifyPropertyChanged("Tournee");
                 sw.Start();
 
-                //On ajoute l'usine à la liste des lieux visités
-                lieuxVisites.Add(voisinProche);
-
                 //On enlève l'usine de la liste des lieux non visités
                 lieuxNonVisites.Remove(voisinProche);
+
+                lieuActuel = voisinProche;
             }
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
