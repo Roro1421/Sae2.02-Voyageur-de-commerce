@@ -25,36 +25,38 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
-            //initialisation de la variable
+            //Initialisation de la variable
             Lieu lieuPlusEloigne1 = listeLieux[0];
             Lieu lieuPlusEloigne2 = listeLieux[0];
 
-            //On initialise les listes
+            //Initialisation les listes
             List<Lieu> lieuxVisites = new List<Lieu>();
             List<Lieu> lieuxNonVisites = new List<Lieu>(listeLieux);
 
-            //initialise la distance la plus longue
-            for (int i = 0; i < listeLieux.Count; i++)
+            //Initialise la distance la plus longue
+            int max = 0;
+            foreach (Lieu lieu1 in listeLieux)
             {
-                for (int j = 0; j < listeLieux.Count; j++)
+                foreach (Lieu lieu2 in listeLieux)
                 {
-                    if (FloydWarshall.Distance(listeLieux[i], listeLieux[j]) > FloydWarshall.Distance(lieuPlusEloigne1, lieuPlusEloigne2))
+                    if (FloydWarshall.Distance(lieu1, lieu2) > max)
                     {
-                        lieuPlusEloigne1 = listeLieux[i];
-                        lieuPlusEloigne2 = listeLieux[j];
+                        lieuPlusEloigne1 = lieu1;
+                        lieuPlusEloigne2 = lieu2;
+                        max = FloydWarshall.Distance(lieuPlusEloigne1, lieuPlusEloigne2);
                     }
                 }
             }
 
-            //on ajoute le deux lieux les plus eloigne a la liste des lieux visite
+            //On ajoute les deux lieux les plus éloignés à la liste des lieux visités
             lieuxVisites.Add(lieuPlusEloigne1);
             lieuxVisites.Add(lieuPlusEloigne2);
 
-            //on ajoute le deux lieux les plus eloigne a la tourne
+            //On ajoute les deux lieux les plus éloignés à la tournée
             Tournee.Add(lieuPlusEloigne1);
             Tournee.Add(lieuPlusEloigne2);
 
-            //on retire le deux lieux les plus eloigne a la liste des lieux non visite
+            //On retire les deux lieux les plus éloignés à la liste des lieux non visités
             lieuxNonVisites.Remove(lieuPlusEloigne1);
             lieuxNonVisites.Remove(lieuPlusEloigne2);
 
@@ -67,7 +69,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 Lieu plusProche = lieuxNonVisites[0];
                 foreach (Lieu L in lieuxNonVisites)
                 {
-                    if (distanceTourne(lieuxVisites, L) < distanceTourne(lieuxVisites, plusProche))
+                    if (distanceTournee(lieuxVisites, L) < distanceTournee(lieuxVisites, plusProche))
                     {
                         plusProche = L;
                     }
@@ -79,7 +81,6 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 this.NotifyPropertyChanged("Tournee");
                 sw.Start();
             }
-            sw.Stop();
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
 
@@ -94,7 +95,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         }
 
         //retourne la distance entre un point et une tournee
-        public int distanceTourne(List<Lieu> T, Lieu A)
+        public int distanceTournee(List<Lieu> T, Lieu A)
         {
             int distance = distanceCouple(A, T[0], T[1]);
             this.positionInsertion = 1;
