@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using VoyageurDeCommerce.modele.distances;
 using VoyageurDeCommerce.modele.lieux;
 
@@ -18,10 +19,16 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {
+            //On lance la stopwatch
+            Stopwatch sw = Stopwatch.StartNew();
+
+            //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
+            //Initialisation de la distance minimale
             int distanceTotalMin = Distance(listeLieux);
 
+            //Initialisation des voisinages
             List<Lieu> voisinage = new List<Lieu>(listeLieux);
             List<Lieu> meilleurVoisinage = new List<Lieu>(listeLieux);
 
@@ -43,28 +50,44 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             {
                 Tournee.Add(l);
             }
-            this.NotifyPropertyChanged("Tournee");
 
+            //Capture de la tournée
+            sw.Stop();
+            this.NotifyPropertyChanged("Tournee");
+            sw.Start();
+
+
+            this.TempsExecution = sw.ElapsedMilliseconds;
         }
 
-        public void Swap(List<Lieu> listeLieu, int indexA, int indexB) 
+        /// <summary>
+        /// Echange deux lieux dans une liste donnée
+        /// </summary>
+        /// <param name="listeLieu">Liste de Lieu concernée</param>
+        /// <param name="indexA">Premier Lieu à échanger</param>
+        /// <param name="indexB">Deuxième Lieu à échanger</param>
+        public void Swap(List<Lieu> listeLieu, int indexA, int indexB)
         {
             Lieu tmp = listeLieu[indexA];
             listeLieu[indexA] = listeLieu[indexB];
-            listeLieu[indexB] = tmp; 
+            listeLieu[indexB] = tmp;
         }
 
+        /// <summary>
+        /// Renvoie la distance 
+        /// </summary>
+        /// <param name="ListeLieux">Liste des lieux du graphe</param>
+        /// <returns>Entier de la distance la plus </returns>
         public int Distance(List<Lieu> ListeLieux)
         {
-
-                int resultat = 0;
-                for (int i = 0; i < ListeLieux.Count; i++)
-                {
-                    resultat += FloydWarshall.Distance(ListeLieux[i], ListeLieux[(i + 1) % ListeLieux.Count]);
-                }
-                return resultat;
-
+            int resultat = 0;
+            Lieu lPrécédent = ListeLieux[0];
+            foreach (Lieu l in ListeLieux)
+            {
+                resultat += FloydWarshall.Distance(lPrécédent, l);
+                lPrécédent = l;
+            }
+            return resultat;
         }
-
     }
 }

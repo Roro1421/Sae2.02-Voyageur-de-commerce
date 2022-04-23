@@ -20,6 +20,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {
+            //On lance la stopwatch
             Stopwatch sw = Stopwatch.StartNew();
 
             //On lance les calculs de FloydWarshall
@@ -33,7 +34,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             List<Lieu> lieuxVisites = new List<Lieu>();
             List<Lieu> lieuxNonVisites = new List<Lieu>(listeLieux);
 
-            //Initialise la distance la plus longue
+            //Initialisation de la distance la plus longue
             int max = 0;
             foreach (Lieu lieu1 in listeLieux)
             {
@@ -60,10 +61,13 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             lieuxNonVisites.Remove(lieuPlusEloigne1);
             lieuxNonVisites.Remove(lieuPlusEloigne2);
 
+
+            //Capture de la tournée
             sw.Stop();
             this.NotifyPropertyChanged("Tournee");
             sw.Start();
 
+            //Boucle trouvant l'ordre de la tournée
             while (lieuxNonVisites.Count != 0)
             {
                 Lieu plusProche = lieuxNonVisites[0];
@@ -81,20 +85,32 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 this.NotifyPropertyChanged("Tournee");
                 sw.Start();
             }
+            //Retourne la durée de la stopwatch
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
 
-        //renvoi la distance entre un point et un couple de point
+        /// <summary>
+        /// Retourne la distance entre un lieu et un couple de lieux
+        /// </summary>
+        /// <param name="A">Lieu hors couple</param>
+        /// <param name="B">Premier lieu du couple</param>
+        /// <param name="C">Deuxième lieu du couple</param>
+        /// <returns>Entier de la distance entre le lieu et le couple de lieux</returns>
         public int distanceCouple(Lieu A, Lieu B, Lieu C)
         {
             int distance = 0;
 
-            //calcul de la distance du point A au couple de point B,C
+            //Calcul de la distance du lieu A au couple de lieux B,C
             distance = FloydWarshall.Distance(B, A) + FloydWarshall.Distance(A, C) - FloydWarshall.Distance(B, C);
             return distance;
         }
 
-        //retourne la distance entre un point et une tournee
+        /// <summary>
+        /// Retourne la distance entre un lieu et une tournée
+        /// </summary>
+        /// <param name="T">Liste de Lieu représentant la tournée</param>
+        /// <param name="A">Lieu hors tournée</param>
+        /// <returns></returns>
         public int distanceTournee(List<Lieu> T, Lieu A)
         {
             int distance = distanceCouple(A, T[0], T[1]);
@@ -110,6 +126,5 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             }
             return distance;
         }
-
     }
 }
