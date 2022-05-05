@@ -71,13 +71,16 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             {
                 int positionInsertion = 0;
                 Lieu plusProche = lieuxNonVisites[0];
+                int mindistance = 0;
                 foreach (Lieu L in lieuxNonVisites)
                 {
-                    if (distanceTournee(lieuxVisites, L, out positionInsertion) < distanceTournee(lieuxVisites, plusProche, out positionInsertion))
+                    if (distanceTournee(lieuxVisites, L, out positionInsertion) < mindistance)
                     {
                         plusProche = L;
+                        mindistance = distanceTournee(lieuxVisites, plusProche, out positionInsertion);
                     }
                 }
+                mindistance = distanceTournee(lieuxVisites, plusProche, out positionInsertion);
                 Tournee.insert(positionInsertion, plusProche);
                 lieuxVisites.Insert(positionInsertion, plusProche);
                 lieuxNonVisites.Remove(plusProche);
