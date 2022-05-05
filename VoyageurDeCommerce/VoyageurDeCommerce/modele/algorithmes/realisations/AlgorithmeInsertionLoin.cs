@@ -14,7 +14,6 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
     /// </summary>
     public class AlgorithmeInsertionLoin : Algorithme
     {
-        private int positionInsertion;
 
         public override string Nom => "Insertion loin";
 
@@ -71,10 +70,11 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
 
             while (lieuxNonVisites.Count != 0)
             {
+                int positionInsertion = 0;
                 Lieu plusLoin = lieuxNonVisites[0];
                 foreach (Lieu L in lieuxNonVisites)
                 {
-                    if (distanceTournee(lieuxVisites, L) > distanceTournee(lieuxVisites, plusLoin))
+                    if (distanceTournee(lieuxVisites, L,out positionInsertion) > distanceTournee(lieuxVisites, plusLoin,out positionInsertion))
                     {
                         plusLoin = L;
                     }
@@ -100,20 +100,21 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         }
 
         //retourne la distance entre un point et une tournee
-        public int distanceTournee(List<Lieu> T, Lieu A)
+        public int distanceTournee(List<Lieu> T, Lieu A, out int positionInsertion)
         {
             int distance = distanceCouple(A, T[0], T[1]);
-            this.positionInsertion = 1;
+            positionInsertion = 1;
 
             for (int i = 0; i < T.Count; i++)
             {
                 if (distanceCouple(A, T[i], T[(i + 1) % T.Count]) <= distance)
                 {
                     distance = distanceCouple(A, T[i], T[(i + 1) % T.Count]);
-                    this.positionInsertion = i + 1;
+                    positionInsertion = i + 1;
                 }
             }
             return distance;
         }
     }
 }
+

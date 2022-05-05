@@ -10,7 +10,6 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
     /// </summary>
     public class AlgorithmeInsertionProche : Algorithme
     {
-        private int positionInsertion;
         public override string Nom => "Insertion proche";
 
         /// <summary>
@@ -70,15 +69,16 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //Boucle trouvant l'ordre de la tournée
             while (lieuxNonVisites.Count != 0)
             {
+                int positionInsertion = 0;
                 Lieu plusProche = lieuxNonVisites[0];
                 foreach (Lieu L in lieuxNonVisites)
                 {
-                    if (distanceTournee(lieuxVisites, L) < distanceTournee(lieuxVisites, plusProche))
+                    if (distanceTournee(lieuxVisites, L, out positionInsertion) < distanceTournee(lieuxVisites, plusProche, out positionInsertion))
                     {
                         plusProche = L;
                     }
                 }
-                Tournee.insert(positionInsertion,plusProche);
+                Tournee.insert(positionInsertion, plusProche);
                 lieuxVisites.Insert(positionInsertion, plusProche);
                 lieuxNonVisites.Remove(plusProche);
                 sw.Stop();
@@ -111,17 +111,17 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         /// <param name="T">Liste de Lieu représentant la tournée</param>
         /// <param name="A">Lieu hors tournée</param>
         /// <returns></returns>
-        public int distanceTournee(List<Lieu> T, Lieu A)
+        public int distanceTournee(List<Lieu> T, Lieu A, out int positionInsertion)
         {
             int distance = distanceCouple(A, T[0], T[1]);
-            this.positionInsertion = 1;
+            positionInsertion = 1;
 
             for (int i = 0; i < T.Count; i++)
             {
                 if (distanceCouple(A, T[i], T[(i + 1) % T.Count]) <= distance)
                 {
                     distance = distanceCouple(A, T[i], T[(i + 1)%T.Count]);
-                    this.positionInsertion = i + 1;
+                    positionInsertion = i + 1;
                 }
             }
             return distance;
