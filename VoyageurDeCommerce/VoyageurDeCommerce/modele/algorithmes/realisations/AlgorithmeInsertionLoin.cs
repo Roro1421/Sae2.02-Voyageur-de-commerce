@@ -60,7 +60,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             Tournee.Add(lieuPlusEloigne1);
             Tournee.Add(lieuPlusEloigne2);
 
-            //On retire les deux lieux les plus éloignés à la liste des lieux non visités
+            //On retire les deux lieux les plus éloignés à la liste des lieux non visités 
             lieuxNonVisites.Remove(lieuPlusEloigne1);
             lieuxNonVisites.Remove(lieuPlusEloigne2);
 

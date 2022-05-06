@@ -175,3 +175,4 @@ C:\Users\rbara\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\ob
 C:\Users\rbara\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.CoreCompileInputs.cache
 C:\Users\rbara\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.exe
 C:\Users\rbara\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.pdb
+C:\Users\antoi\Documents\GitHub\Sae2.02\VoyageurDeCommerce\VoyageurDeCommerce\obj\Debug\VoyageurDeCommerce.csproj.AssemblyReference.cache
