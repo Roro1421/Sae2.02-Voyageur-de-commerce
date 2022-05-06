@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using VoyageurDeCommerce.modele.distances;
 using VoyageurDeCommerce.modele.lieux;
 
-namespace VoyageurDeCommerce.modele.algorithmes.realisations
+namespace VoyageurDeCommerce.modele.algorithmes.realisations  
 {
     /// <summary>
     /// Gère l'algorithme d'insertion loin
