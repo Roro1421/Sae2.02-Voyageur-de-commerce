@@ -23,9 +23,13 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
         /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {
+            //On lance la stopwatch
             Stopwatch sw = Stopwatch.StartNew();
+
+            //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
+            //Boucle trouvant l'ordre de la tournée
             foreach (Lieu lieu in listeLieux)
             {
                 Tournee.Add(lieu);
