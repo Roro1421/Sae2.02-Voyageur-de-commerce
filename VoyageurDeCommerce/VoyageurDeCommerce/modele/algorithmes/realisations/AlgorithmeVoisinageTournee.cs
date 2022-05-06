@@ -31,19 +31,25 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //Initialisation des voisinages
             List<Lieu> voisinage = new List<Lieu>(listeLieux);
             List<Lieu> meilleurVoisinage = new List<Lieu>(listeLieux);
+            List<Lieu> meilleurVoisinagetrouve = new List<Lieu>(listeLieux);
 
-            for (int i = 0; i < listeLieux.Count; i++)
+            while (Distance(meilleurVoisinagetrouve) < Distance(meilleurVoisinage))
             {
-                Swap(voisinage, i, (i + 1) % voisinage.Count);
-
-                int distanceTotal = Distance(voisinage);
-
-                if (distanceTotal < distanceTotalMin)
+                for (int i = 0; i < listeLieux.Count; i++)
                 {
-                    distanceTotalMin = distanceTotal;
-                    meilleurVoisinage = voisinage;
+                    Swap(voisinage, i, (i + 1) % voisinage.Count);
+
+                    if (Distance(voisinage) < distanceTotalMin)
+                    {
+                        distanceTotalMin = Distance(voisinage);
+                        meilleurVoisinagetrouve = voisinage;
+                    }
+                    voisinage = listeLieux;
                 }
-                voisinage = listeLieux;
+                if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
+                {
+                    meilleurVoisinage = meilleurVoisinagetrouve;
+                }
             }
 
             foreach (Lieu l in meilleurVoisinage)
