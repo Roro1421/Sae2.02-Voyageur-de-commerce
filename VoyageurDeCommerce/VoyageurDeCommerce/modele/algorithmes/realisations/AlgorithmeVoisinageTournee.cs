@@ -22,20 +22,36 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //On lance la stopwatch
             Stopwatch sw = Stopwatch.StartNew();
 
-            //On lance les calculs de FloydWarshall
-            FloydWarshall.calculerDistances(listeLieux, listeRoute);
+            //On initialise l'algorithme d'insertion proche sur lequel on va se baser
+            AlgorithmeInsertionProche algoUtilisé = new AlgorithmeInsertionProche();
+            List<Lieu> tournée = algoUtilisé.Tournée(listeLieux, listeRoute);
 
             //Initialisation de la distance minimale
-            int distanceTotalMin = Distance(listeLieux);
+            int distanceTotalMin = Distance(tournée);
 
             //Initialisation des voisinages
-            List<Lieu> voisinage = new List<Lieu>(listeLieux);
-            List<Lieu> meilleurVoisinage = new List<Lieu>(listeLieux);
-            List<Lieu> meilleurVoisinagetrouve = new List<Lieu>(listeLieux);
+            List<Lieu> voisinage = new List<Lieu>(tournée);
+            List<Lieu> meilleurVoisinage = new List<Lieu>(tournée);
+            List<Lieu> meilleurVoisinagetrouve = new List<Lieu>(tournée);
 
-            while (Distance(meilleurVoisinagetrouve) < Distance(meilleurVoisinage))
+            for (int i = 0; i < tournée.Count; i++)
             {
-                for (int i = 0; i < listeLieux.Count; i++)
+                Swap(voisinage, i, (i + 1) % voisinage.Count);
+
+                if (Distance(voisinage) < distanceTotalMin)
+                {
+                    distanceTotalMin = Distance(voisinage);
+                    meilleurVoisinagetrouve = voisinage;
+                }
+            }
+            if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
+            {
+                meilleurVoisinage = meilleurVoisinagetrouve;
+            }
+
+            while (meilleurVoisinagetrouve.Count == 0 || Distance(meilleurVoisinagetrouve) < Distance(meilleurVoisinage))
+            {
+                for (int i = 0; i < tournée.Count; i++)
                 {
                     Swap(voisinage, i, (i + 1) % voisinage.Count);
 
@@ -44,7 +60,6 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                         distanceTotalMin = Distance(voisinage);
                         meilleurVoisinagetrouve = voisinage;
                     }
-                    voisinage = listeLieux;
                 }
                 if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
                 {
@@ -61,7 +76,6 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             sw.Stop();
             this.NotifyPropertyChanged("Tournee");
             sw.Start();
-
 
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
