@@ -1,0 +1,1 @@
+Ce programme génére des cliques de taille n (à spécifier dans le programmme) 
