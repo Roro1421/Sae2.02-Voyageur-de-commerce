@@ -70,12 +70,11 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             foreach (Lieu l in meilleurVoisinage)
             {
                 Tournee.Add(l);
+                //Capture de la tournée
+                sw.Stop();
+                this.NotifyPropertyChanged("Tournee");
+                sw.Start();
             }
-
-            //Capture de la tournée
-            sw.Stop();
-            this.NotifyPropertyChanged("Tournee");
-            sw.Start();
 
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
