@@ -8,6 +8,7 @@
         PLUSPROCHEVOISIN,
         INSERTIONPROCHE,
         INSERTIONLOIN,
-        VOISINAGETOURNEE
+        VOISINAGETOURNEE,
+        RANDOM
     }
 }
