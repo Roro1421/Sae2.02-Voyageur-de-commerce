@@ -140,6 +140,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ressources\GrapheSimple7.gph">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ressources\GrapheSimple3.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
