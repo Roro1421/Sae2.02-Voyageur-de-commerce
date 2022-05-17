@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace GeneGraph
 {
+    /// <summary>
+    /// Permet d'écrire dans la console les lignes pour créer une clique de taille n, interprétable par le parceur du voyageur de commerce
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -14,7 +17,7 @@ namespace GeneGraph
             //nombre random
             var rand = new Random();
             //distance initial du centre du cercle
-            int distanceFromCenter = 15; 
+            int distanceFromCenter = 25; 
 
             //création des magasins 
             for (int i = 0; i < nb; i++)

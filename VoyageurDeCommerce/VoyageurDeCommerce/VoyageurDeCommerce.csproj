@@ -140,6 +140,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="ressources\GrapheBipartie1.gph">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="ressources\GrapheTroisChemin2.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
