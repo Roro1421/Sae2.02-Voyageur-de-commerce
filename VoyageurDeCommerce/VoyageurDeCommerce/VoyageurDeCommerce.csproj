@@ -140,16 +140,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="ressources\GrapheSimple7.gph">
+    <None Include="ressources\GrapheTroisChemin2.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="ressources\GrapheSimple3.gph">
+    <None Include="ressources\GrapheTroisChemin1.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Content Include="ressources\GrapheSimple5.gph">
+    <Content Include="ressources\GrapheClique10.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ressources\GrapheSimple6.gph">
+    <Content Include="ressources\GrapheClique50.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="vue\ressources\images\icon.ico" />
