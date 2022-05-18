@@ -6,23 +6,33 @@ using VoyageurDeCommerce.modele.lieux;
 
 namespace VoyageurDeCommerce.modele.algorithmes.realisations
 {
-    class AlgorithmeRandom : Algorithme
+    /// <summary>
+    /// Gère l'algorithme aléatoire
+    /// </summary>
+    public class AlgorithmeRandom : Algorithme
     {
-        public AlgorithmeRandom()
-        {
-        }
+        public override string Nom => "Aléatoire";
 
-        public override string Nom => "Random";
-
+        /// <summary>
+        /// Exécute l'algorithme aléatoire sur un graphe
+        /// </summary>
+        /// <param name="listeLieux">Liste de tous les lieux du graphe concerné</param>
+        /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
         public override void Executer(List<Lieu> listeLieux, List<Route> listeRoute)
         {
+            //On lance la stopwatch
             Stopwatch sw = Stopwatch.StartNew();
 
+            //On lance les calculs de FloydWarshall
             FloydWarshall.calculerDistances(listeLieux, listeRoute);
 
+            //Initialisation de la liste
             List<Lieu> tourne = new List<Lieu>();
-            tourne = repeateRandom(listeLieux,1000);
 
+            //Appelle de la recherche locale par l'aléatoire
+            tourne = repeateRandom(listeLieux,10000);
+
+            //Ajoute tous les lieux à la Tournee
             foreach(Lieu l in tourne)
             {
                 Tournee.Add(l);
@@ -31,12 +41,16 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 sw.Start();
             }
 
-
-
-            //this.TempsExecution = sw.ElapsedMilliseconds;
+            this.TempsExecution = sw.ElapsedMilliseconds;
 
         }
 
+        /// <summary>
+        /// Renvoie une tournée aléatoire
+        /// </summary>
+        /// <param name="listeLieux">Liste de tous les lieux du graphe concerné</param>
+        /// <param name="distance">Distance de la tournée</param>
+        /// <returns>List de Lieux visités</returns>
         public List<Lieu> random(List<Lieu> listeLieux, out int distance)
         {
             List<Lieu> lieuNonVisite = new List<Lieu>(listeLieux);
@@ -58,6 +72,12 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             return lieuVisite;
         }
 
+        /// <summary>
+        /// Repète l'algo random un nombre de fois donné en paramètre et sort la meilleur tournée
+        /// </summary>
+        /// <param name="listeLieux">Liste de tous les lieux du graphe concerné</param>
+        /// <param name="nbRepeate"></param>
+        /// <returns>Meilleure tournée parmis toutes celles calculée</returns>
         public List<Lieu> repeateRandom(List<Lieu> listeLieux,int nbRepeate)
         {
             int distance;
