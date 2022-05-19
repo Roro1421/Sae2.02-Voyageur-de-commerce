@@ -31,30 +31,16 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
 
             //Initialisation des voisinages
             List<Lieu> voisinage = new List<Lieu>(tournée);
-            List<Lieu> meilleurVoisinage = new List<Lieu>(tournée);
+            List<Lieu> voisinagePrecedent = new List<Lieu>(tournée);
             List<Lieu> meilleurVoisinagetrouve = new List<Lieu>(tournée);
 
-            for (int i = 0; i < tournée.Count; i++)
-            {
-                Swap(voisinage, i, (i + 1) % voisinage.Count);
-
-                if (Distance(voisinage) < distanceTotalMin)
-                {
-                    distanceTotalMin = Distance(voisinage);
-                    meilleurVoisinagetrouve = voisinage;
-                }
-            }
-
-            if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
-            {
-                meilleurVoisinage = meilleurVoisinagetrouve;
-            }
-
-            while (meilleurVoisinagetrouve.Count == 0 || Distance(meilleurVoisinagetrouve) < Distance(meilleurVoisinage))
+            do
             {
                 for (int i = 0; i < tournée.Count; i++)
                 {
                     Swap(voisinage, i, (i + 1) % voisinage.Count);
+
+                    voisinagePrecedent = meilleurVoisinagetrouve;
 
                     if (Distance(voisinage) < distanceTotalMin)
                     {
@@ -62,13 +48,9 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                         meilleurVoisinagetrouve = voisinage;
                     }
                 }
-                if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
-                {
-                    meilleurVoisinage = meilleurVoisinagetrouve;
-                }
-            }
+            } while (Distance(meilleurVoisinagetrouve) < Distance(voisinagePrecedent));
 
-            foreach (Lieu l in meilleurVoisinage)
+            foreach (Lieu l in meilleurVoisinagetrouve)
             {
                 Tournee.Add(l);
                 //Capture de la tournée

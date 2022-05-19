@@ -91,6 +91,13 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //Retourne la durée de la stopwatch
             this.TempsExecution = sw.ElapsedMilliseconds;
         }
+
+        /// <summary>
+        /// Renvoie la tournée de l'insertion proche
+        /// </summary>
+        /// <param name="listeLieux">Liste de tous les lieux du graphe concerné</param>
+        /// <param name="listeRoute">Liste de toutes les routes du graphe concerné</param>
+        /// <returns>Liste des lieux de la tournée dans le bon ordre</returns>
         public List<Lieu> Tournée(List<Lieu> listeLieux, List<Route> listeRoute)
         {
             //On lance les calculs de FloydWarshall
