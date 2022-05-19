@@ -44,6 +44,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                     meilleurVoisinagetrouve = voisinage;
                 }
             }
+
             if (Distance(meilleurVoisinage) < Distance(meilleurVoisinagetrouve))
             {
                 meilleurVoisinage = meilleurVoisinagetrouve;
@@ -106,6 +107,7 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
                 resultat += FloydWarshall.Distance(lPrécédent, l);
                 lPrécédent = l;
             }
+            resultat += FloydWarshall.Distance(lPrécédent, ListeLieux[0]);
             return resultat;
         }
     }
