@@ -146,6 +146,12 @@
     <Content Include="ressources\GrapheBipartie1.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ressources\GrapheKittel1.gph">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ressources\GrapheKittel2.gph">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="ressources\GraphePetersen2.gph">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
