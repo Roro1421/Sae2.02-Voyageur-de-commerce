@@ -8,9 +8,9 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
     /// <summary>
     /// Gère l'algorithme du voisinage d'une tournée
     /// </summary>
-    public class AlgorithmeVoisinageTournee : Algorithme
+    public class AlgorithmeVoisinageTourneeLoin : Algorithme
     {
-        public override string Nom => "Voisinage d'une tournée";
+        public override string Nom => "Voisinage d'une tournée (insertion loin)";
 
         /// <summary>
         /// Exécute l'algorithme du voisinage d'une tournée sur un graphe
@@ -22,8 +22,8 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             //On lance la stopwatch
             Stopwatch sw = Stopwatch.StartNew();
 
-            //On initialise l'algorithme d'insertion proche sur lequel on va se baser
-            AlgorithmeInsertionProche algoUtilisé = new AlgorithmeInsertionProche();
+            //On initialise l'algorithme d'insertion loin sur lequel on va se baser
+            AlgorithmeInsertionLoin algoUtilisé = new AlgorithmeInsertionLoin();
             List<Lieu> tournée = algoUtilisé.Tournée(listeLieux, listeRoute);
 
             //Initialisation de la distance minimale

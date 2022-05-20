@@ -24,7 +24,8 @@ namespace VoyageurDeCommerce.modele.algorithmes
                 case TypeAlgorithme.INSERTIONLOIN: algo = new AlgorithmeInsertionLoin(); break;
                 case TypeAlgorithme.INSERTIONPROCHE: algo = new AlgorithmeInsertionProche(); break;
                 case TypeAlgorithme.PLUSPROCHEVOISIN: algo = new AlgorithmePlusProcheVoisin(); break;
-                case TypeAlgorithme.VOISINAGETOURNEE: algo = new AlgorithmeVoisinageTournee(); break;
+                case TypeAlgorithme.VOISINAGETOURNEEPROCHE: algo = new AlgorithmeVoisinageTourneeProche(); break;
+                case TypeAlgorithme.VOISINAGETOURNEELOIN: algo = new AlgorithmeVoisinageTourneeLoin(); break;
                 case TypeAlgorithme.RANDOM: algo = new AlgorithmeRandom(); break;
 
                 default: throw new ExceptionAlgorithme("Vous n'avez pas modifié la fabrique des algorithmes !");

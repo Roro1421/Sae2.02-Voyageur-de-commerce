@@ -76,7 +76,8 @@
     <Compile Include="modele\algorithmes\realisations\AlgorithmeInsertionLoin.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeInsertion.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeRandom.cs" />
-    <Compile Include="modele\algorithmes\realisations\AlgorithmeVoisinageTournee.cs" />
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeVoisinageTourneeLoin.cs" />
+    <Compile Include="modele\algorithmes\realisations\AlgorithmeVoisinageTourneeProche.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeInsertionProche.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmePlusProcheVoisin.cs" />
     <Compile Include="modele\algorithmes\realisations\AlgorithmeCroissant.cs" />
