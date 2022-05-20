@@ -34,21 +34,24 @@ namespace VoyageurDeCommerce.modele.algorithmes.realisations
             List<Lieu> voisinagePrecedent = new List<Lieu>(tournée);
             List<Lieu> meilleurVoisinagetrouve = new List<Lieu>(tournée);
 
+            //Initialisation compteur pour le while
+            int compteur = 0;
+
             do
             {
                 for (int i = 0; i < tournée.Count; i++)
                 {
                     Swap(voisinage, i, (i + 1) % voisinage.Count);
 
-                    voisinagePrecedent = meilleurVoisinagetrouve;
-
                     if (Distance(voisinage) < distanceTotalMin)
                     {
+                        voisinagePrecedent = meilleurVoisinagetrouve;
                         distanceTotalMin = Distance(voisinage);
                         meilleurVoisinagetrouve = voisinage;
                     }
                 }
-            } while (Distance(meilleurVoisinagetrouve) < Distance(voisinagePrecedent));
+                compteur++;
+            } while (Distance(meilleurVoisinagetrouve) >= Distance(voisinagePrecedent) && compteur<1000);
 
             foreach (Lieu l in meilleurVoisinagetrouve)
             {
